@@ -1,18 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject instanceObject;
+    public Vector3 instancePosition= new Vector3(0,0,0);
+    public float speed;
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-        
+       if (Input .GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(instanceObject, transform.position, Quaternion.identity);
+                
+        }
+        if(Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(Vector3.up.normalized * speed * Time.deltaTime);
+        }
+        if(Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(Vector3.down.normalized * speed * Time.deltaTime);
+        }
     }
 }
