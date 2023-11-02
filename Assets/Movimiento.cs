@@ -24,11 +24,11 @@ public class Movimiento : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector3.up.normalized * speed * Time.deltaTime);
+            transform.Translate(Vector3.left.normalized * speed * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.S))
         {
-            transform.Translate(Vector3.down.normalized * speed * Time.deltaTime);
+            transform.Translate(Vector3.right.normalized * speed * Time.deltaTime);
         }
     }
 }

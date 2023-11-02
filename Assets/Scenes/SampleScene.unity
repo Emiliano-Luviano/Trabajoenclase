@@ -875,6 +875,7 @@ GameObject:
   - component: {fileID: 1863324519}
   - component: {fileID: 1863324521}
   - component: {fileID: 1863324520}
+  - component: {fileID: 1863324522}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -998,6 +999,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863324518}
   m_CullTransparentMesh: 1
+--- !u!114 &1863324522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863324518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0bca960a00e504a9b774c8df06e6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntosVida: 5
 --- !u!1 &1970990153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,7 +1023,6 @@ GameObject:
   - component: {fileID: 1970990158}
   - component: {fileID: 1970990157}
   - component: {fileID: 1970990156}
-  - component: {fileID: 1970990155}
   - component: {fileID: 1970990154}
   m_Layer: 0
   m_Name: Cube
@@ -1034,27 +1047,6 @@ MonoBehaviour:
   max: 5.38
   min: -3.62
   timer: 0
---- !u!65 &1970990155
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970990153}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1970990156
 MeshRenderer:
   m_ObjectHideFlags: 0
