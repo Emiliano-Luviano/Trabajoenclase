@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +11,7 @@ public class MovimientoEnemigo : MonoBehaviour
     void Start()
     {
         textObject = FindAnyObjectByType<TextoPuntaje>();
+        textObjectVidas = FindAnyObjectByType<TextoVidas>();
     }
 
   
@@ -22,7 +22,7 @@ public class MovimientoEnemigo : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        textObject.puntos = textObject.puntos + 1;
+        
 
 
         if (collision.gameObject.tag == "Pared")
@@ -35,7 +35,7 @@ public class MovimientoEnemigo : MonoBehaviour
             if (textObjectVidas.puntosVida==0)
             {
                 Destroy(collision.gameObject);
-                SceneManager.LoadScene(0);               
+                SceneManager.LoadScene(3);               
             }
             Destroy(gameObject);
 
@@ -45,6 +45,10 @@ public class MovimientoEnemigo : MonoBehaviour
             textObject.puntos = textObject.puntos + 1;
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            if(textObject.puntos==10)
+            {
+                SceneManager.LoadScene(2);
+            }
         }
 
         

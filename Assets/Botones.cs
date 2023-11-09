@@ -10,6 +10,11 @@ public class Botones : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void botónMenú ()
+    {
+        SceneManager.LoadScene(0);
+    }
+  
 
     public void SalirDelJuego()
     {
