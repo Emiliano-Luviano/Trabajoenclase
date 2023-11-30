@@ -27,7 +27,7 @@ public class MovimientoEnemigo : MonoBehaviour
 
         if (collision.gameObject.tag == "Pared")
         {
-
+            Destroy(gameObject);
         }
         else if (collision.gameObject.tag =="Jugador")
         {
