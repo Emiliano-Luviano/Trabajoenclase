@@ -3,7 +3,11 @@ guid: a1e80da04674c314591f8876879357e3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemy: {fileID: 1254682366055707120, guid: 59d37a7eb8fc7a541ab1557289ec6060, type: 3}
+  - tanque: {fileID: 6360916863632154561, guid: d883be32417b2174993879728357a36f, type: 3}
+  - veloz: {instanceID: 0}
+  - zigzag: {fileID: 4468975191904640066, guid: cecb829f69b2f4943ab93879d721f4e3, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
